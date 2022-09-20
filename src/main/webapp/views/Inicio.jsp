@@ -32,19 +32,18 @@ que le permita administrar los principales procesos que se llevan a cabo en ella
       <div class="col-12 col-md-8 col-lg-4 mx-auto">
        <form action="Inicio" method="post">
        <h2 class="text-center mb-4">Ingrese a que area pertenece </h2>
-          <div class="form-group">
-           <INPUT type="radio" name="usuario" value="Cliente"> Cliente <BR>
-          </div>
-          <div class="form-group">
-           <INPUT type="radio" name="usuario" value="Administrativo"> Administrativo<BR>
-          </div>
-          <div class="form-group">
-            <INPUT type="radio" name="usuario" value="Profesional"> Profesional<BR>
-          </div>
+           <div class="form-group">
+            <label> Tipo de Usuario:</label>
+            <select name= tipoUsuario>
+            <option value= Administrativo>Administrativo</option>
+            <option value= Cliente>Cliente</option>
+            <option value = Profesional>Profesional</option>
+            </select>
+      </div>
+      
           <%@ include file = "button.jsp" %>
   
        <p class="text-justify px-4">Gracias por su preferencia </p>
-   
  </FORM>
  </div>
  </div>

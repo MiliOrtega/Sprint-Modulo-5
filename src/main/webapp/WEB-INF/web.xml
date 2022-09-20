@@ -39,9 +39,17 @@
     <servlet-name>Septimo</servlet-name>
     <servlet-class> cl.grupodos.controlador.Login</servlet-class>
   </servlet>
+   <servlet>
+    <servlet-name>Octavo</servlet-name>
+    <servlet-class> cl.grupodos.controlador.EditarUsuarios</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>Noveno</servlet-name>
+    <servlet-class> cl.grupodos.controlador.CerrarSesion</servlet-class>
+  </servlet>
  
   <error-page>
   <error-code>404</error-code>
-  <location>/views/404.jpg</location>
+  <location>/views/error404.jpeg</location>
   </error-page>
 </web-app>

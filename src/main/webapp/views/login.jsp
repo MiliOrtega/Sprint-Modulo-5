@@ -16,20 +16,7 @@
 <body>
 <header>
 
-<div class="navbar-nav">
-<nav class="navbar navbar-light bg-light">
 
-        <div class="container-fluid">
-       		    <a class="nav-link active" href="#">Inicio</a>  
-                <a class="nav-link" href="#">Contacto </a>
-                <a class="nav-link active" href="#">Crear Capacitacion</a> 
-                <a class="nav-link active" href="#">Crear Usuario</a> 
-                <a class="nav-link active" href="#">Listado de Usuarios</a> 
-                <a class="nav-link active" href="#">Cerrar Sesion</a>         
-             
-          </div>
-          </nav>
-    </div>  
 </header>
 
 <section>

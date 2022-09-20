@@ -29,13 +29,14 @@
     <div class="row">
       <div class="col-12 col-md-8 col-lg-4 mx-auto">
        <form action="Contacto" method="post">
-          <div class="form-group">
-            <label for="name">Nombre y apellido: </label>
-            <input name="nombres" class="form-control">
+           <div class="form-group">
+            <label for="name">Nombre y Apellido: </label>
+            <input name="nombres" class="form-control"  placeholder="ejemplo, Soledad Carrasco"
+          min="6" max="40"  required>
           </div>
           <div class="form-group">
             <label for="mail">Correo Electrónico</label>
-            <input type="email" name="mail" class="form-control">
+            <input type="email" name="mail" class="form-control" placeholder="ejemplo, sunombre@gmail.com" required="required">
           </div>
           <div class="form-group">
             <label for="msj"> Escribe tu Mensaje</label>

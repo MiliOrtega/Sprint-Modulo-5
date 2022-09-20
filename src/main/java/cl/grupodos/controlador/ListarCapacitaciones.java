@@ -31,7 +31,7 @@ public class ListarCapacitaciones extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-CapacitacionService capacitacion = new CapacitacionService();
+    CapacitacionService capacitacion = new CapacitacionService();
 		
 		
 		

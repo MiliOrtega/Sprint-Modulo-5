@@ -59,7 +59,7 @@ private Connection coneccion; {
 			
 			stm.close();
 		}catch (Exception e) {
-			System.out.println("fallo getAll");
+			System.out.println("fallo addCapacitacion");
 		}
 	}
 

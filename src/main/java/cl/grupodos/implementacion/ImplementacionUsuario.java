@@ -59,6 +59,37 @@ String sql = "Insert Usuarios (id, Nombre, Apellido, Rut, TipoUsuario) values ('
 			System.out.println("fallo addUsuario");
 		}
 	}
+
+	@Override
+	public void actualizarUsuario(Usuario usuario) {
+		String sql = "update Usuarios set nombre ='"+usuario.getNombre()+"', apellido ='"+usuario.getApellido()+"',rut ='"+usuario.getRut()+"', tipoUsuario = ´"+usuario.getTipoUsuario()+" WHERE id = '"+usuario.getId()+"'";
+		try {
+			Statement stm = coneccion.createStatement();
+			stm.executeQuery(sql);
+			stm.close();
+		}catch (Exception e) {
+			System.out.println("fallo actualizar usuario");
+		}
+	}
+
+	@Override
+	public void eliminarUsuario(int id) {
+		String sql = "delete clientes WHERE Id = " + id;
+		try {
+			Statement stm = coneccion.createStatement();
+			stm.executeQuery(sql);
+			stm.close();
+		}catch (Exception e) {
+			System.out.println("fallo delete usuario");
+		}
+		
+	}
+
+	@Override
+	public void actualizarUsuario() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 
 }

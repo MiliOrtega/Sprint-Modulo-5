@@ -37,6 +37,7 @@
  	<th> Apellido </th>
  	<th> Rut </th>
  	<th> TipoUsuario </th>
+ 	<th> Acciones</th>
  	
  
  	</tr>
@@ -48,7 +49,11 @@
  		<td><c:out value="${c.getApellido()}"></c:out></td>
  		<td><c:out value="${c.getRut()}"></c:out></td>
  		<td><c:out value="${c.getTipoUsuario()}"></c:out></td>
- 		
+ 		<td><a href="${pageContext.request.contextPath}/EditarUsuarios?id=${c.getId()}">Editar</a></td>
+ 		<td><a href="${pageContext.request.contextPath}/EditarUsuarios?id=${c.getId()}">Eliminar</a></td>
+ 		<td>
+        
+         </td>
  		
  		</tr>
  	</c:forEach>
